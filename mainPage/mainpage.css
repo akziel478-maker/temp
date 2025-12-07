@@ -1,0 +1,131 @@
+
+.container {
+    width: 625px;
+    height: 600px;
+    max-width: 95%;
+    margin: 20px auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    padding: 12px;
+}
+.container img {
+    width: 100%;
+    height: auto;
+    max-height: calc(100% - 60px);
+    object-fit: contain;
+    display: block;
+} 
+.container a {
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    word-break: break-word;
+    padding: 0 8px;
+}
+.products {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 32px;
+    box-sizing: border-box;
+    justify-items: center;
+    align-items: start;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.product-card {
+    width: 100%;
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    background: white;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.product-title {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    padding: 0 8px;
+    word-break: break-word;
+    color: #333;
+}
+
+.p1 {
+    background-color: #ffe6e6;
+}
+
+.p1 .product-image {
+    background-color: #ffcccc;
+}
+
+.p2 {
+    background-color: #e6ffe6;
+}
+
+.p2 .product-image {
+    background-color: #ccffcc;
+}
+
+.p3 {
+    background-color: #fffef0;
+}
+
+.p3 .product-image {
+    background-color: #ffffcc;
+}
+
+.p4 {
+    background-color: #e6f5e6;
+}
+
+.p4 .product-image {
+    background-color: #d9f0d9;
+}
