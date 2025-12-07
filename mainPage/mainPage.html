@@ -92,7 +92,33 @@
         </div>
     </div>
     <div class="right"></div>
+    <script>
+    (function(){
+        const map = {
+            p1: '../productPage/p1/productPage1.html',
+            p2: '../productPage/p2/productPage2.html',
+            p3: '../productPage/p3/productPage3.html',
+            p4: '../productPage/p4/productPage4.html'
+        };
 
-   
+        document.querySelectorAll('.product-card').forEach(card => {
+            card.style.cursor = 'pointer';
+            card.setAttribute('tabindex', '0');
+            card.addEventListener('click', function(){
+                const cls = Array.from(card.classList).find(c => /^p\d+$/.test(c));
+                const url = map[cls];
+                if (!url) return;
+                // open product page (change to window.location.href = url; if you prefer same-tab navigation)
+                window.open(url, '_blank');
+            });
+            card.addEventListener('keydown', function(e){
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    card.click();
+                }
+            });
+        });
+    })();
+    </script>
 </body>
 </html>
