@@ -1,0 +1,65 @@
+:root { --header-height: 70px; --brand-padding: 200px; }
+
+body {
+    padding-top: var(--header-height);
+    margin: 0;
+    background: #f8f9fa;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+header.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--header-height);
+    width: 100%;
+    z-index: 1030;
+    background: var(--bs-body-bg, #fff);
+}
+header.header .navbar {
+    height: 100%;
+    margin: 0;
+    width: 100%;
+}
+.navbar .container-fluid {
+    background-color: #fff;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.navbar .navbar-brand {
+    padding-left: var(--brand-padding);
+    font-size: 50px;
+}
+.d-flex.ms-auto {
+    padding-right: var(--brand-padding);
+}
+
+/* Login card */
+.login-page {
+    min-height: calc(100vh - var(--header-height));
+    padding: 40px 20px;
+}
+
+.login-card {
+    width: 420px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.login-card .card-body {
+    padding: 32px;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .navbar .navbar-brand { padding-left: 20px; font-size: 34px; }
+    .d-flex.ms-auto { padding-right: 20px; }
+    .login-card { width: 92%; }
+}
