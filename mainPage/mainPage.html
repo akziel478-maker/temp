@@ -56,32 +56,44 @@
     <div class="main-wrapper">
         <div class="left">
             <div class="sidebar-section">
-                <h3>Navigation</h3>
+                <h3>Điều hướng</h3>
                 <ul>
-                    <li><a href="../mainPage/mainPage.html">Home</a></li>
-                    <li><a href="../infoPage/infoPage.html">About Us</a></li>
-                    <li><a href="../newsPage/newsPage.html">News</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div class="sidebar-section">
-                <h3>Categories</h3>
-                <ul>
-                    <li><a href="#">Sweaters</a></li>
-                    <li><a href="#">Shoes</a></li>
-                    <li><a href="#">Hoodies</a></li>
-                    <li><a href="#">Pants</a></li>
+                    <li><a href="../mainPage/mainPage.html">Trang chủ</a></li>
+                    <li><a href="../infoPage/infoPage.html">Giới thiệu</a></li>
+                    <li><a href="../loginPage/login.html">Đăng nhập</a></li>
+                    <li><a href="#">Liên hệ</a></li>
                 </ul>
             </div>
         </div>
-
         <div class="mid">
-            <div class="container">
-                <img src="imgMainPage/DLMain.webp" alt="">
-                <a href="http://127.0.0.1:5500/checkpoint2/NguyenTuanMinhcp2/page2/cpp2.html">CÁC ĐỊA ĐIỂM VUI CHƠI TẠI ĐÀ LẠT</a>
+            <!-- News Section -->
+            <div class="news-section">
+                <h2>Tin tức mới nhất</h2>
+
+                <div class="news-card">
+                    <h3 class="news-title">Bộ sưu tập mùa đông mới</h3>
+                    <p class="news-excerpt">
+                        Bộ sưu tập mùa đông mới của chúng tôi đã có sẵn! Bao gồm áo len ấm áp, áo hoodie phong cách và quần dài phù hợp cho mùa lạnh.
+                    </p>
+                </div>
+
+                <div class="news-card">
+                    <h3 class="news-title">Khuyến mãi lễ hội - Giảm 20%</h3>
+                    <p class="news-excerpt">
+                        Hãy cùng chúng tôi chào đón lễ hội! Nhận giảm 20% cho tất cả sản phẩm trong tuần này. Sử dụng mã HOLIDAY20 khi thanh toán.
+                    </p>
+                </div>
+
+                <div class="news-card">
+                    <h3 class="news-title">Giày Converse có sẵn</h3>
+                    <p class="news-excerpt">
+                        Giày Converse cổ điển đã có hàng. Có sẵn nhiều màu sắc và kiểu dáng khác nhau để phù hợp với cá tính của bạn.
+                    </p>
+                </div>
             </div>                                              
         <script src="cp2.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+        <h1 style="margin-left: 75px;">Một số sản phẩm dành cho noel sắp tới</h1>
         <!-- product list -->
         <div class="products">
             <div class="product-card p1">
@@ -113,16 +125,7 @@
 
     <div class="right">
         <div class="sidebar-section">
-            <h3>Special Offers</h3>
-            <ul>
-                <li><a href="#">Winter Sale 20%</a></li>
-                <li><a href="#">New Arrivals</a></li>
-                <li><a href="#">Best Sellers</a></li>
-                <li><a href="#">Clearance</a></li>
-            </ul>
-        </div>
-        <div class="sidebar-section">
-            <h3>Follow Us</h3>
+            <h3>Theo dõi chúng tôi</h3>
             <ul>
                 <li><a href="#">Facebook</a></li>
                 <li><a href="#">Instagram</a></li>
@@ -143,9 +146,8 @@
         
         document.querySelectorAll('.product-card').forEach(card => {
             card.style.cursor = 'pointer';
-            card.setAttribute('tabindex', '0');
             card.addEventListener('click', function(){
-                const cls = Array.from(card.classList).find(c => /^p\d+$/.test(c)); //calc to find the location of the class
+                const cls = Array.from(card.classList).find(c => /^p\d+$/.test(c)); //calc to find the location of the class, asked chatgpt for this
                 const url = map[cls]; 
                 if (!url) return;
                 // open product page
