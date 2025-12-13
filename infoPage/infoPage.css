@@ -1,65 +1,29 @@
-.info-container {
+.container {
     max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
-    background: #f8f9fa;
-    border-radius: 8px;
+    background-color: rgb(250, 248, 248);
+    border-radius: 20px;
+    
 }
-
-.info-section {
-    background: white;
-    padding: 24px;
+.content {
+    font-size: larger;
+    max-width: 800px;
+    margin: auto;
     margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
-
-.info-section h1 {
-    color: #333;
-    margin-bottom: 12px;
-    font-size: 32px;
-    font-weight: bold;
-}
-
-.info-section h2 {
-    color: #0066cc;
-    margin-top: 0;
-    margin-bottom: 12px;
-    font-size: 22px;
-}
-
-.info-section p {
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 0;
-}
-
-.product-list, .feature-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.product-list li, .feature-list li {
-    padding: 10px 0;
-    color: #555;
-    line-height: 1.6;
-    border-bottom: 1px solid #eee;
-}
-
-.product-list li:last-child, .feature-list li:last-child {
-    border-bottom: none;
-}
-
-.product-list strong {
-    color: #0066cc;
-}
-
 .back-button {
     text-align: center;
     margin-top: 30px;
 }
-
+.content h1 {
+    font-weight: bolder;
+}
+.content h2 {
+    color: rgb(59, 59, 207);
+}
 .back-button .btn {
     background: #0066cc;
     border: none;
@@ -69,23 +33,4 @@
 
 .back-button .btn:hover {
     background: #0052a3;
-}
-
-@media (max-width: 768px) {
-    .info-container {
-        margin: 20px 10px;
-    }
-
-    .info-section {
-        padding: 16px;
-        margin-bottom: 15px;
-    }
-
-    .info-section h1 {
-        font-size: 24px;
-    }
-
-    .info-section h2 {
-        font-size: 18px;
-    }
 }
