@@ -53,6 +53,7 @@
             </div>
         </nav>
     </header>
+    <!-- left -->
     <div class="main-wrapper">
         <div class="left">
             <div class="sidebar-section">
@@ -65,6 +66,7 @@
                 </ul>
             </div>
         </div>
+        <!-- mid -->
         <div class="mid">
             <!-- News Section -->
             <div class="news-section">
@@ -121,19 +123,25 @@
                 <h3 class="product-title">Quần dài</h3>
             </div>
         </div>
+       
+        <!-- footer -->
+        <footer style="max-width: 800px; margin: 20px auto 0; text-align: center; padding: 20px; background-color: #f8f9fa;">
+            <p>&copy; 2025 Vi En Ẹt Brét. All rights reserved.</p>
+        </footer>
     </div>
 
-    <div class="right">
-        <div class="sidebar-section">
-            <h3>Theo dõi chúng tôi</h3>
-            <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">TikTok</a></li>
-            </ul>
+     <!-- right -->
+        <div class="right">
+            <div class="sidebar-section">
+                <h3>Theo dõi chúng tôi</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">TikTok</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
     <script>
     (function(){
         // map product classes to their respective URLs
@@ -153,7 +161,7 @@
                 // open product page
                 window.open(url, '_blank');
             });
-            // function for keyboard accessibility, might delete this later
+            // function for keyboard, might delete this later
             card.addEventListener('keydown', function(e){
                 if (e.key === 'Enter' || e.key === ' ') {
                     e.preventDefault();
@@ -163,5 +171,6 @@
         });
     })();
     </script>
+    
 </body>
 </html>
